@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+.wrapper{
+    width: 100%;
+}
+.wrapper .top-bar{
+    width: 100%;
+    background-color: #00bfa5;
+    position: relative;
+}
+.top-bar .title{
+    color: white;
+    margin-left: 10px;
+    line-height: 25px;
+}
+.top-bar .sections{
+    width: 180px;
+
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+.sections .sect{
+    width: 50px;
+    height: 100%;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    transition: .3s linear;
+}
+.sect:hover{
+    background-color: lightgray;
+}
+
+/*left bar*/
+
+
+.left-bar{
+    min-width: 30%;
+    height: 95vh;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-bar .tops{
+    width: 100%;
+
+}
+.tops .top1{
+    width: 100%;
+    padding: 10px 0;
+    background: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top1 .image{
+    margin-left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+.top1 .properties{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ekstra{
+    font-size: 2.5rem;
+    cursor:pointer;
+    position: relative;
+}
+.add{
+    font-size: 1.4rem;
+    padding: 5px 10px;
+    position: relative;
+    cursor : pointer;
+    border-radius: 50%;
+}
+.add:hover{
+    background-color: lightgray;
+}
+.add .addTo{
+    display: none;
+    position: absolute;
+    transform: translate(-75%);
+    width: 200px;
+    height: 302px;
+    background-color: white;
+    z-index: 10000;
+    box-shadow: 2px 2px 5px gray;
+    font-size: 1.5rem;
+}
+.add .addDevam{
+    padding: 6px 0;
+    margin-top:5px; 
+    text-align: center;
+}
+.addDevam:hover{
+    background-color: silver;
+}
+/*top1 finish top2 start*/
+.tops .top2{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.top2 .search{
+    display: flex;
+    width: 90%;
+    height: 40px;
+    position: relative;
+    transition: .5s linear;
+}
+.search input
+{
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    border:none;
+    outline:none;
+    padding-left: 50px;
+    transition : .3s linear;
+}
+.hiddensearch{
+    position: absolute;
+    top: 0.7rem;
+    left:15px;
+    color: silver;
+    animation: rotate 5s linear;
+    display: block;
+    transform: rotate(0deg);
+}
+
+.hiddensearch.kapat{
+    display: none;
+}
+
+.search .activesearch{
+    transition : 5s linear;
+    display: none;
+    position: absolute;
+    top: 0.7rem;
+    color: skyblue;
+    font-size: 1.2rem;
+    left:1rem;
+    transform: rotate(0deg);
+}
+.activesearch.ac{
+    transform: rotate(-90deg);
+    display: block;
+}
+.left-bar .bot{
+    background-color: whitesmoke;
+    overflow: auto;
+    width: 100%;
+    flex: 1;
+}
+.bot .icerik{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    
+}
+.icerik:hover{
+    background-color: #ebebeb;
+}
+.icerik .img{
+    margin-left: 1rem;
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-size: cover;
+}
+.icerik .descs{
+    margin-left: 1rem;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+.descs .desc{
+    width: 16rem;
+    height: 70%;
+    overflow: hidden;
+    font-size: 1.1rem;
+}
+
+
+
+.wrapper .container{
+    display: flex;
+}
+/*right bar start*/
+.wrapper .right-bar{
+    width: 70%;
+    height: 95vh;
+    background-image: url(wp.jpg);
+    background-size: cover;
+}
+.right-bar .right-top{
+    width: 100%;
+    padding:4px 0;
+    background-color: #ededed;
+    border-left: 1px solid silver;
+}
+.right-top .right-top-pro{
+    width: 95%;
+    height: 100%;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.imgAndName{
+    width: 200px;
+    height: 60px;
+    display:flex;
+}
+.right-top-pro .foto{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 5px;
+}
+.right-top-pro .name{
+    font-size: 1.2rem;
+    margin: 15px;
+    color: #414141;
+}
+.right-top-pro .sec{
+    display: flex;
+}
+.sec #isearch{
+    font-size: 1.2rem;
+    margin-top: 25px;
+    color: #a5a5a5;
+    position: relative;
+    cursor: pointer;
+    transition: .5s linear;
+}
+/*searchnext start*/
+.sec #isearch .searchnext{
+
+    position: absolute;
+    top: -25px;
+    right: -93px;
+    width: 400px;
+    height: 95vh;
+    background-color: white;
+    transition: .5s linear;
+}
+
+.searchnext .icerikler1{
+    width: 100%;
+    height: 10vh;
+    background-color: #EDEDED;
+    border-left: 0.5px solid silver;
+    display: flex;
+}
+.icerikler1 .x{
+    padding: 15px;
+    cursor:pointer;
+    color: black;
+}
+.icerikler1 .x:hover{
+    color: blueviolet;
+}
+.icerikler1 h2{
+    padding:  15px;
+    font-size: 1.3rem;
+}
+.searchnext .icerikler2{
+    width: 100%;
+    height: 10vh;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 0.5px silver;
+}
+.icerikler2 .search{
+    width: 90%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.icerikler2 .search input{
+    width: 100%;
+    height: 6vh;
+    
+}
+
+/*searchnext finish*/
+
+.sec .ucs{
+    font-size: 1.4rem;
+    margin-left: 30px;
+    margin-top: 1rem;
+    padding: 5px 12px;
+    position: relative;
+    cursor : pointer;
+    border-radius: 50%;
+}
+.ucs:hover{
+    background-color: silver;
+}
+.ucs .ucnokta{
+    display : none;
+    width: 13rem;
+    position: absolute;
+    top:3rem;
+    right: -1.2rem;
+    text-align: center;
+    height: 15rem;
+    background-color: white;
+    box-shadow: 5px 5px 10px gray;
+}
+.ucnokta .ucler{
+    padding: 0.81rem 0;
+    font-size: 1.2rem;
+}
+.ucler:hover{
+    background-color: lightgray;
+}
+
+
+/*right bottom start*/
+.right-bar .right-bottom{
+    width: 100%;
+    height: 10vh;
+    background-color: #f0f0f0;
+    margin-top: 468px;
+    border-left: 1px solid silver;
+}
+.right-bottom .right-bottom-pro{
+    width: 95%;
+    height: 100%;
+    margin-left: 2.5%;
+    display: flex;
+    background-color: #f0f0f0;
+    align-items: center;
+    z-index:1;
+}
+.right-bottom-pro .smile{
+    width: 50px;
+    margin-left: 10px;
+    font-size: 1.6rem;
+    color: #535352;
+    cursor:pointer;
+}
+.right-bottom-pro .atac{
+    width: 50px;
+    font-size: 1.6rem;
+    color: #535352;
+    cursor:pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+/* atac*/
+
+.ADD{
+    position: absolute;
+    width: 50px;
+    height: auto;
+    bottom: 40px;
+    transition-property: height;
+    transition-duration: 2s;
+    display: none;
+}
+.ADD.pocus{
+    display: block;
+}
+.zoom{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+.zoom:nth-child(1){
+    background-color: #4079ec;
+}
+.zoom:nth-child(2){
+    background-color: #0795dc;
+}
+.zoom:nth-child(3){
+    background-color:#5157ae;
+}
+.zoom:nth-child(4){
+    background-color:#d3396d;
+}
+.zoom:nth-child(5){
+    background-color: #ac44cf;
+}
+/*zoom finish*/
+.right-bottom-pro .input{
+    width: 80%;
+    color: white;
+    height: 80%;
+    border-radius: 25px;
+    border:none;
+    color: #535352;
+    outline: none;
+    padding-left: 20px;
+}
+.right-bottom-pro .microfon{
+    width: 50px;
+    font-size: 1.6rem;
+    color: #535352;
+    margin-left: 10px;
+    cursor:pointer;
+}
